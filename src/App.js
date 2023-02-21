@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Footer from './Componentes/Footer';
+import Navbar from './Componentes/Navbar';
+import Banner from './img/header-banner.webp';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="container">
+      <header className="header">
+      <img src={Banner}></img>
       </header>
+      <main>
+        <p className='descripcionIndex texto'>Realiza tests de los temas que te interesen y consigue tantos puntos como puedas. ¡Enséñale a tus amigos y al mundo entero tus logros y tu nivel!</p>
+        <button className='boton'>Inicia Sesión</button>
+        <br></br>
+        <button className='boton'>Regístrate</button>
+
+        <h4>Tutorial Básico</h4>
+        <p className='texto'>Escoge una categoría.</p>
+        <img src={Banner}></img>
+      </main>
+      <Navbar></Navbar>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </div>
   );
 }

@@ -1,0 +1,22 @@
+/* ********* */
+/* @HOME */
+/* ********* */
+
+
+body{
+    width: 360px;
+}
+
+.container{
+    max-width: 360px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+}
+
